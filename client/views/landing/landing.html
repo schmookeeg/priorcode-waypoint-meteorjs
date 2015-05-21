@@ -1,0 +1,75 @@
+
+
+<template name="landing">
+
+  {{>topNav}}
+
+  <div class="container-fluid">
+    <div class="row">
+      {{>leftNav}}
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Dashboard</h1>
+
+        <div class="row placeholders">
+          {{> landingHero }}
+        </div>
+        {{> landingActiveTickets }}
+      </div>
+    </div>
+  </div>
+  
+</template>
+
+<template name="landingActiveTickets">
+  <h2 class="sub-header">Active Tickets</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{> landingTicketRow }}
+      </tbody>
+    </table>
+  </div>
+</template>
+
+
+<template name="landingTicketRow">
+  <tr>
+    <td>1,001</td>
+    <td>Lorem</td>
+    <td>ipsum</td>
+    <td>dolor</td>
+    <td>sit</td>
+  </tr>
+</template>
+
+<template name="landingHero">
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>New Ticket</h4>
+    <span class="text-muted">Create a new Workorder in the System</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Active Tickets</h4>
+    <span class="text-muted">View Workorders currently in the System</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Parts</h4>
+    <span class="text-muted">View, Order, and Verify Parts and Inventory</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Clients/Accounting</h4>
+    <span class="text-muted">View Clients and Receivables</span>
+  </div>
+</template>
